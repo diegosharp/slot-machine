@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Tilt+Neon&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/base_DRo786.css">
+     <script src="script/constants_DRo786.js" defer></script>
+     <script src="script/navigation_DRo786.js" defer></script>
+     <script src="script/prediction_DRo786.js" defer></script>
+     <script src="script/slotMachineUtils_DRo786.js" defer></script>
+     <script src="script/reel_DRo786.js" defer></script>
+     <script src="script/slotMachine_DRo786.js" defer></script>
+     <script src="script/game_DRo786.js"></script>
+     <script src="script/mainScript_DRo786.js" defer></script>
+</head>
+<body>
+    <h1 class="title neon-text-base">Slot Machine</h1>
+    <div class="text-body-wrapper">
+        <p class="text-body">Welcome to this slot</p>
+    </div>
+    <div class="main-layout">
+        <div class="container-side neumorphism-container">
+            <h2>Wallet</h2>
+            <div class="balance-layout">
+                <span>Balance: </span>
+                <div class="balance">
+                    <span class="currency">0 $</span>
+                </div>
+            </div>
+
+            <h2>Money Faucet</h2>
+            <div class="balance-layout">
+                <span>Add Funds: </span>
+                <div class="balance">
+                    <input type="number" name="fundsInput" id="fundsInput" max="1000" min="1" value="1" class="input-number">
+                </div>
+                
+            </div>
+            <button class="add-funds-button">Add Funds</button>
+
+        </div>
+        <div class="container-middle neumorphism-container">
+            <div class="slot-machine-elements-space">
+            </div>
+            <div class="first-row-layout">
+                <button id="spin-button">Spin</button>
+                <input type="number" name="betAmount" id="betAmount" max="100" min="0" class="input-number" placeholder="Make your bet">
+                <button id="max-button">Max</button>
+            </div>
+            <div class="second-row-layout">
+                <div class="radio-wrapper">
+                    <span class="text-body label-group">Game Mode:</span>
+                    <div class="input-wrapper">
+                        <label for="cheat" class="text-body">Default</label>
+                        <input type="radio" id="cheat" class="cheat-checkbox" name="cheat" value="defaultMode" checked>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="cheat" class="text-body">Cheat</label>
+                        <input type="radio" id="cheat" class="cheat-checkbox" name="cheat" value="cheatMode">
+                    </div>
+                    <div>
+                        <label for="cheat" class="text-body">Ultimate Cheat</label>
+                        <input type="radio" id="cheat" class="cheat-checkbox" name="cheat" value="ultimateCheatMode">
+                    </div>
+                </div>
+            </div>
+            <div class="simply-wrapper">
+                <a href="./page2_DRo786.html">Check Payouts</a>
+            </div>
+        </div>
+        <div id="predictions-container" class="container-side neumorphism-container">
+            <h2>Predictions</h2>
+            <span class="text-body align-left">
+                Predict how many times any item will appear after the game, regardless of its position. Payout: 
+                <br>
+                Payout / 6 * (number of coincidences) * (1 + ( Payout / 6 * number of coincidences)).
+            </span>
+            <div class="first-row-layout">
+                <button id="spin-button-predictions">Spin</button>
+                <input type="number" name="betAmount" id="betAmount-predictions" max="100" min="0" class="input-number" placeholder="Make your bet">
+                <button id="max-button-predictions">Max</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-layout">
+        <h3 class="footer-text">Assets made by thatgamecompany for the Sky game</h3>
+    </div>
+</body>
+</html>
