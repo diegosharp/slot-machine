@@ -23,7 +23,7 @@ function createPayoutsTable() {
 
         const imageCell = document.createElement('td');
         const img = document.createElement('img');
-        img.src = "/images/" +  item.path; 
+        img.src = "images/" +  item.path; 
         img.alt = item.name;
         img.style.width = '50px'; 
         img.style.height = '50px';
