@@ -1,10 +1,6 @@
 
 function createPayoutsTable() {
     const tableContainer = document.querySelector('.container-middle.neumorphism-container');
-    if (!tableContainer) {
-        console.error('Table container with id "page2_DRo786" not found.');
-        return;
-    }
 
     const table = document.createElement('table');
 
@@ -27,7 +23,7 @@ function createPayoutsTable() {
 
         const imageCell = document.createElement('td');
         const img = document.createElement('img');
-        img.src = "../images/" +  item.path; 
+        img.src = "/images/" +  item.path; 
         img.alt = item.name;
         img.style.width = '50px'; 
         img.style.height = '50px';
